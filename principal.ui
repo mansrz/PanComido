@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>761</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="Layout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 75 20pt &quot;Ubuntu&quot;;
+text-align: center; </string>
+        </property>
+        <property name="text">
+         <string>Pan Comido - Inventario</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInventario">
+    <property name="title">
+     <string>Inventario</string>
+    </property>
+    <addaction name="actionVer"/>
+    <addaction name="actionAgregar_movimiento"/>
+   </widget>
+   <widget class="QMenu" name="menuFactura">
+    <property name="title">
+     <string>Productos</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuElaborados">
+    <property name="title">
+     <string>Elaborados</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>Reportes</string>
+    </property>
+    <addaction name="actionD_a_actual"/>
+    <addaction name="actionSemanal"/>
+    <addaction name="actionEstad_sticas"/>
+   </widget>
+   <addaction name="menuInventario"/>
+   <addaction name="menuFactura"/>
+   <addaction name="menuElaborados"/>
+   <addaction name="menuReportes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_reporte">
+   <property name="text">
+    <string>Créditos</string>
+   </property>
+  </action>
+  <action name="actionBuscar">
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+  <action name="action_cliente">
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionBuscar_2">
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+  <action name="action_producto">
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionBuscar_3">
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+  <action name="action_factura">
+   <property name="text">
+    <string>Generar</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="action_facturas">
+   <property name="text">
+    <string>Facturas</string>
+   </property>
+  </action>
+  <action name="action_inventarios">
+   <property name="text">
+    <string>Inventario</string>
+   </property>
+  </action>
+  <action name="actionVer">
+   <property name="text">
+    <string>Ver</string>
+   </property>
+  </action>
+  <action name="actionAgregar_movimiento">
+   <property name="text">
+    <string>Agregar movimiento</string>
+   </property>
+  </action>
+  <action name="actionD_a_actual">
+   <property name="text">
+    <string>Día actual</string>
+   </property>
+  </action>
+  <action name="actionSemanal">
+   <property name="text">
+    <string>Semanal</string>
+   </property>
+  </action>
+  <action name="actionEstad_sticas">
+   <property name="text">
+    <string>Estadísticas</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
