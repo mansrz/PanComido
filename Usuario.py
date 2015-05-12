@@ -1,4 +1,4 @@
-from conection import *
+from conexion import *
 class Cuenta():
   nick=''
   nombre=''

@@ -6,12 +6,14 @@ from PyQt4.QtGui import *
 from Usuario import *
 import re
 
-ui = uic.loadUiType('mainwindow.ui')[0]
-login = uic.loadUiType('login.ui')[0]
-ingresar = uic.loadUiType('ingresar.ui')[0]
-estilo = open('st.stylesheet','r').read()
+try:
+    ui = uic.loadUiType('principal.ui')[0]
+    login = uic.loadUiType('login.ui')[0]
+    estilo = open('st.stylesheet','r').read()
+except:
+    print 'falto algo'
 
-class VentanaPrincipal(QtGui.QMainWindow, principal_ui):
+class VentanaPrincipal(QtGui.QMainWindow, ui):
   def __init__(self,parent=None):
     QtGui.QMainWindow.__init__(self,parent)
     self.setupUi(self)
