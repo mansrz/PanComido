@@ -1,0 +1,27 @@
+--
+
+Ventas: 
+  Producción que egresa
+    Productos: 
+      Elaborado
+      De terceros   
+
+    Elaborado: 
+      Un tipo de pan: 
+        Necesita tanto tipo de materia prima para hacerse. 
+
+
+Un sistema de inventario orientado a panadería y sistematizar gastos y ganancias.
+
+Se hace un inventario por día, se registran 'inventarios' y 'entradas', se hacen 2 entradas e inventariosa por día. 
+
+  Inventarios: 
+    Cuentan todos los productos
+
+  Entradas: 
+    Panes y/o tortas hechas en una parte del día. 
+
+
+Tiempo de expiración de los productos elaborados, por ejemplo la torta tiene un tiempo de expiración de 2 días. 
+
+--

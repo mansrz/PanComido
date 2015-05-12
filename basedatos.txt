@@ -1,0 +1,37 @@
+
+Tablas
+
+  Usuario
+    nombre
+    contraseña
+
+  Modelo de inventario 
+    
+    Elemento 
+      Nombre
+      Precio
+      Tipo
+      Expiracion
+
+      Primarios
+        Nombre
+        Precio
+
+
+      Elaborados
+        Nombre 
+        Lista de Elementos primarios
+        Precio
+
+        Lista de Elementos primarios (Tabla muchos a muchos)
+          Elemento Primario
+          Elemento Elaborado (id)
+          Cantidad
+    
+    Movimiento 
+      Tipo (Entrada o Inventario)
+      Elemento
+      Cantidad Ing
+      Cantidad Egr
+      Fecha
+
