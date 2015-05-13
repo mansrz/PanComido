@@ -57,6 +57,7 @@ text-align: center; </string>
     </widget>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -68,35 +69,29 @@ text-align: center; </string>
    </property>
    <widget class="QMenu" name="menuInventario">
     <property name="title">
-     <string>Inventario</string>
-    </property>
-    <addaction name="actionVer"/>
-    <addaction name="actionAgregar_movimiento"/>
-   </widget>
-   <widget class="QMenu" name="menuFactura">
-    <property name="title">
      <string>Productos</string>
     </property>
+    <addaction name="actionPropio"/>
+    <addaction name="actionTerceros"/>
    </widget>
-   <widget class="QMenu" name="menuElaborados">
+   <widget class="QMenu" name="menuInventario_2">
     <property name="title">
-     <string>Elaborados</string>
+     <string>Inventario</string>
     </property>
+    <addaction name="actionDiario"/>
+    <addaction name="actionEntradas"/>
    </widget>
    <widget class="QMenu" name="menuReportes">
     <property name="title">
      <string>Reportes</string>
     </property>
-    <addaction name="actionD_a_actual"/>
-    <addaction name="actionSemanal"/>
-    <addaction name="actionEstad_sticas"/>
+    <addaction name="actionGastos"/>
+    <addaction name="actionEstadsticas"/>
    </widget>
    <addaction name="menuInventario"/>
-   <addaction name="menuFactura"/>
-   <addaction name="menuElaborados"/>
+   <addaction name="menuInventario_2"/>
    <addaction name="menuReportes"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="action_reporte">
    <property name="text">
     <string>Créditos</string>
@@ -151,14 +146,14 @@ text-align: center; </string>
     <string>Inventario</string>
    </property>
   </action>
-  <action name="actionVer">
+  <action name="actionTerceros">
    <property name="text">
-    <string>Ver</string>
+    <string>Terceros</string>
    </property>
   </action>
-  <action name="actionAgregar_movimiento">
+  <action name="actionPropio">
    <property name="text">
-    <string>Agregar movimiento</string>
+    <string>Propios</string>
    </property>
   </action>
   <action name="actionD_a_actual">
@@ -172,6 +167,26 @@ text-align: center; </string>
    </property>
   </action>
   <action name="actionEstad_sticas">
+   <property name="text">
+    <string>Estadísticas</string>
+   </property>
+  </action>
+  <action name="actionDiario">
+   <property name="text">
+    <string>Diario</string>
+   </property>
+  </action>
+  <action name="actionEntradas">
+   <property name="text">
+    <string>Entradas</string>
+   </property>
+  </action>
+  <action name="actionGastos">
+   <property name="text">
+    <string>Gastos</string>
+   </property>
+  </action>
+  <action name="actionEstadsticas">
    <property name="text">
     <string>Estadísticas</string>
    </property>

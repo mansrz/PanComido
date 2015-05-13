@@ -11,39 +11,42 @@ try:
     login = uic.loadUiType('login.ui')[0]
     estilo = open('st.stylesheet','r').read()
 except:
-    print 'falto algo'
+    print 'Error con los archivos de interfaz'
 
 class VentanaPrincipal(QtGui.QMainWindow, ui):
-  def __init__(self,parent=None):
-    QtGui.QMainWindow.__init__(self,parent)
-    self.setupUi(self)
-    screen = QtGui.QDesktopWidget().screenGeometry()
-    self.frame.move((screen.width()-self.frame.geometry().width())/2, (screen.height()-self.frame.geometry().height())/2)
-    self.setStyleSheet(estilo )
-    self.inicializar()
+    def __init__(self,parent=None):
+        QtGui.QMainWindow.__init__(self,parent)
+        self.setupUi(self)
+        screen = QtGui.QDesktopWidget().screenGeometry()
+        self.frame.move((screen.width()-self.frame.geometry().width())/2, (screen.height()-self.frame.geometry().height())/2)
+        self.setStyleSheet(estilo )
+        self.inicializar()
 
-  def inicializar(self):
-    self.action_cliente.triggered.connect(self.Abrir_cliente)
-    self.action_producto.triggered.connect(self.Abrir_producto)
-    self.action_factura.triggered.connect(self.Abrir_factura)
-    self.action_reporte.triggered.connect(self.Abrir_reporte)
-  
-  def Abrir_reporte(self):
-    reporte = VentanaReporte()
-    reporte.exec_()
-  
-  def Abrir_factura(self):
-    factura = VentanaFactura()
-    factura.exec_()
+    def inicializar(self):
+        self.actionPropio.triggered.connect(self.MantenimientoPropios)
+        self.actionTerceros.triggered.connect(self.MantenimientoTerceros)
+        self.actionDiario.triggered.connect(self.MantenimientoDiario)
+        self.actionEntradas.triggered.connect(self.MantenimientoEntradas)
+        self.actionGastos.triggered.connect.(self.MantenimientoGastos)
+        self.actionEstadsticas.triggered.connect.(self.MantenimientoEstadisticas)
 
-  def Abrir_producto(self):
-    producto = VentanaProducto()
-    producto.exec_()
+    def MantenimientoPropios(self):
+        pass    
 
-  def Abrir_cliente(self):
-    cliente = VentanaCliente()
-    cliente.exec_()
+    def MantenimientoTerceros(self):
+        pass
 
+    def MantenimientoDiario(self):
+        pass
+
+    def MantenimientoEntradas(self):
+        pass
+
+    def MantenimientoGastos(self):
+        pass
+
+    def MantenimientoEstadisticas(self):
+        pass
 
 class Login(QtGui.QDialog, login):
     conexion = Conexion()
@@ -70,10 +73,9 @@ class Login(QtGui.QDialog, login):
         
 
 if __name__ == '__main__':
-  app = QtGui.QApplication(sys.argv)
-  if Login().exec_() == QtGui.QDialog.Accepted:
-    print 'holiwis'
-    principal = VentanaPrincipal()
-    principal.showMaximized()
-    sys.exit(app.exec_())
-   
+    app = QtGui.QApplication(sys.argv)
+    if Login().exec_() == QtGui.QDialog.Accepted:
+        principal = VentanaPrincipal()
+        principal.showMaximized()
+        sys.exit(app.exec_())
+           
