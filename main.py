@@ -27,15 +27,14 @@ class VentanaPrincipal(QtGui.QMainWindow, ui):
         self.actionTerceros.triggered.connect(self.MantenimientoTerceros)
         self.actionDiario.triggered.connect(self.MantenimientoDiario)
         self.actionEntradas.triggered.connect(self.MantenimientoEntradas)
-        self.actionGastos.triggered.connect.(self.MantenimientoGastos)
-        self.actionEstadsticas.triggered.connect.(self.MantenimientoEstadisticas)
+        self.actionGastos.triggered.connect(self.MantenimientoGastos)
+        self.actionEstadsticas.triggered.connect(self.MantenimientoEstadisticas)
 
     def MantenimientoPropios(self):
-        pass    
+        pass 
 
     def MantenimientoTerceros(self):
-        pass
-
+        pass 
     def MantenimientoDiario(self):
         pass
 

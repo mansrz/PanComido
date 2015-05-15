@@ -17,6 +17,9 @@ class Elemento(Objeto):
     def __init__(self):
         self.inicializar()
 
+    def inicializar(self): 
+        pass 
+
     def guardar(self):
         id = str(self.contar())
         query = self.query_insert + ' %s,%s,%s,%s '+self.query_insert_end

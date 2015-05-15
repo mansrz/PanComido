@@ -18,7 +18,6 @@ class MainWidget(QWidget):
 
         
         layout = QVBoxLayout()
-        layout.
         layout.addWidget(self.button)
         layout.addWidget(self.view)
         self.setLayout(layout)

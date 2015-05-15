@@ -136,7 +136,7 @@
       <property name="text">
        <string>Guardar</string>
       </property>
-     </widget>
+ 
     </widget>
    </widget>
    <widget class="QWidget" name="tb_mantenimiento">
